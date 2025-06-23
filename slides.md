@@ -64,19 +64,32 @@ layout: two-cols
 # О чем буду говорить?
 <br v-for="n of 2">
 
-- О llm?
+- О больших языковых моделях?
 
 <v-clicks>
 
 - О промпт инженерах?
-- Об инструментах для AI-assist разработки?
+- Об инструментах для работы с ИИ?
 - О том как ИИ заменит разработчиков?
 
 </v-clicks>
 ::right::
+<div class="clown" :style="{
+    '--clown-height': [80, 160, 230, 400][$clicks] + 'px'
+    }"></div>
 
-Не перегружен ли мемами и изображениями?
-Тут можно воткнуть клоуна наряжающегося
+<style>
+.clown {
+    height: var(--clown-height);
+    width: 100px;
+    border-top: black 2px solid;
+    border-right: black 2px solid;
+    margin: auto;
+    background: url('/public/Clown.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
 
 ---
 layout: center
@@ -108,7 +121,7 @@ layout: two-cols
 <v-click at="5">
 
 - Ricing
-- и др
+- и другие полезные штуки как сделать кодинг комфортным
 
 </v-click>
 
@@ -161,10 +174,25 @@ layout: two-cols
 layout: fact
 ---
 
-## **Vibecoding** здорового человека
+## <code class="wrong">Vibecoding</code> !== <code>Вайбовый кодинг</code>
 
-### что это?
+<style>
+.wrong{
+    color: var(--red) !important;
+}
+</style>
 
+---
+layout: fact
+---
+
+# **Вайбовый кодинг** это:
+
+<style>
+h1 {
+    font-size: 7em !important;
+}
+</style>
 
 ---
 layout: image
@@ -183,30 +211,21 @@ class: pt-100
 image: /true-vibe.jpg
 ---
 
-# *vibe* - атмосфера вокруг, общее состояние
-
-<style>
-h1 {
-    background: #11111BAA;
-    padding: 1rem;
-    backdrop-filter: blur(12px);
-    border-radius: 12px;
-}
-</style>
+<h1 class="floating bottom-10 right-4"><strong><i>vibe</i></strong> - атмосфера вокруг, общее состояние</h1>
 
 ---
 layout: quote
 class: grid place-items-center bg-black
 ---
 
-<h1 class="text-center">Погнали</h1>
+<h1 class="text-center">Погнали разбираться</h1>
 <img class="mx-auto b-rd-8" src="/hack.gif" />
 
 ---
 layout: fact
 ---
 
-## **Железо** и <span style="color: var(--green)">софт</span>
+# **Железо** 🍻 <span style="color: var(--green)">Софт</span>
 
 ---
 layout: image
@@ -219,190 +238,27 @@ image: /iron_texture1044-669289013.jpg
 </h1>
 
 ---
-layout: image-left
-transition: none
-image: /AltoMouse.jpg
----
-# Мышь / Тачпад
-<br>
-
-##### Плюхи:
-<br>
-
-- Мыши бывают вертикальные
-- Тачпады есть и внешние и это удобно
-- Ходовой продукт = огромные возможности кастомизаций
-
----
-layout: image-left
-image: /DogPCMouse_1.jpg
----
-# Мышь / Тачпад
-
-
-<br>
-
-##### Плюхи:
-<br>
-
-- Мыши бывают вертикальные
-- Тачпады есть и внешние и это удобно
-- Ходовой продукт = огромные возможности кастомизаций
-
----
-layout: image-left
-image: /trackball.jpg
----
-# Трекболл
-<br>
-
-##### Плюхи:
-- для ленивых
-- очень компактен
-- необычен
-
----
-layout: image-left
-image: /IBM_model_m_rotate.jpg
+layout: fact
 ---
 
-# Клавиатуры
-<br>
-
-##### Плюхи
-- любые формы
-- любые размеры
-- без нее никак
-
-<!-- 
-Клавиатура - это сердце рабочего сетапа. Печатать на неудобной клавиатуре портит весь вайб
--->
+## Про цены:
+# 🍺 = 500р
 
 ---
-class: grid grid-cols-3 gap-5
+src: ./pages/mouses.md
 ---
 
-<h1 class="grid-col-span-3">Клавиатуры (Основные размеры)</h1>
-<div>
-    <img src="/keyboards/full_1280.jpg"/>
-    <label>full-size</label>
-</div>
-
-<div>
-    <img src="/keyboards/TKL_1280.jpg"/>
-    <label>TKL (ten key less)</label>
-</div>
-
-<div>
-    <img src="/keyboards/60_1280.jpg"/>
-    <label>60%</label>
-</div>
-
-
-<style>
-img {
-    margin-bottom: 12px;
-}
-
-h1 ~ div {
-    text-align: center;
-}
-
-label {
-    text-align: middle;
-    font-size: 12px;
-}
-</style>
-
 ---
-class: grid grid-cols-4 gap-5
+src: ./pages/touchpads.md
 ---
 
-<h1 class="grid-col-span-4">Клавиатуры (какие бывают еще)</h1>
-<div>
-    <img src="/keyboards/tkc_godspeed75_keyboard_75-percent_1200.jpg"/>
-    <label>75%</label>
-</div>
-
-<div>
-    <img src="/keyboards/Portico_DSA-Magic-Girl_overhead.jpg"/>
-    <label>65%</label>
-</div>
-
-<div>
-    <img src="/keyboards/Infinikey-Graen_minivan_overhead_1920x1080.jpg"/>
-    <label>40%</label>
-</div>
-
-<div v-click>
-    <img style="height: 115px; margin: auto; margin-bottom: 12px" src="/keyboards/the-key-stack-overflow-copy-paste-keyboard.jpg"/>
-    <label>3keys Stack overflow</label>
-</div>
-
-
-<style>
-img {
-    margin-bottom: 12px;
-}
-
-h1 ~ div {
-    text-align: center;
-}
-
-label {
-    text-align: middle;
-    font-size: 12px;
-}
-</style>
-
 ---
-layout: image-left
-image: /keyboards/home-03.avif
+src: ./pages/trackball.md
 ---
 
-# Эрго-сплит / Кастом
-<br>
-
-##### Плюхи
-- Для ленивых. Ход пальцев минимален
-- сверх кастомизируемая
-    - раскладка
-    - свитчи
-    - прошивка
-- меньше пластика - меньше вес
-
 ---
-layout: image-right
-image: /keyboards/home-01.avif
+src: ./pages/keyboards.md
 ---
-
-# Эрго-сплит / Кастом
-
-Что позволяют делать современные прошивки (на примере zmk)
-
-<v-clicks>
-
-- **Mod-tap** - на одну клавишу разное поведение от зажатия / нажатия
-- **Концепция слоев**
-- **tapdance** - разное поведение клавиши от количества нажатий по ней
-- **Макросы**
-- **Smart caps lock** - очень удобно для констант 
-- и тд
-
-</v-clicks>
-
----
-layout: image-right
-image: /BP-3.2-2048x821.webp
----
-
-# Эрго-сплит / Кастом
-
-Кейкапы/Свичи
-
-(не знаю надо ли)
-- виды кейкапов/ виды свичей
-
 
 ---
 layout: image-left
@@ -451,49 +307,8 @@ image: /matrix.gif
 </h1>
 
 ---
-
-<h1>Тайловые менеджеры окон</h1>
-<div class="grid grid-cols-2">
-
-<div>
-<div v-if="$clicks === 0">
-<h3> Главная фича: </h3>
-
-**Эффективное использование рабочего пространства**
-
-</div>
-
-
-<div>
-<h3 v-click>Особи: </h3>
-<v-clicks depth="1">
-
-- **Линух**
-    - hyprland
-    - i3
-    - XMonad
-- **Макось**
-    - Aerospace (юзаю сам)
-    - Ametist (юзал до aerospace)
-    - Yabai
-- **Windows**
-    - komorebi
-    - GlazeWM
-
-</v-clicks>
-
-</div>
-
-
-</div>
-
-<div class="grid-row-span-2 pt-12">
-    <video autoplay class="mx-a mt-8" src="/outfoxxed.mp4" loop/>
-    <p class="text-gray-500 text-center">(hyprland)</p>
-</div>
-
-</div>
-
+src: ./pages/tilling.md
+---
 
 ---
 class: grid grid-cols-2 gap-5
@@ -636,7 +451,7 @@ image: /matrix.gif
 
 <v-click>
     <div class="mt-10 w-60 fit-content text-center">
-        <img class="h-60 mb-8" src="/TUI/qr-code.png" />
+        <img class="h-60 mb-8" src="/tui/qr-code.png" />
         <label > git tui-awesome </label>
     </div>
 </v-click>

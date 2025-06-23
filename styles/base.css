@@ -1,0 +1,8 @@
+.floating {
+    position: absolute;
+    background: #141414AA;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 12px;
+    z-index: 1;
+}
