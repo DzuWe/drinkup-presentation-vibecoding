@@ -68,7 +68,7 @@ layout: two-cols
 
 <v-clicks>
 
-- О промпт инженерах?
+- О промпт инжениринге, как перспективной профессии?
 - Об инструментах для работы с ИИ?
 - О том как ИИ заменит разработчиков?
 
@@ -113,14 +113,14 @@ layout: two-cols
 <v-clicks>
 
 - Гиковые гаджеты
-- Полезные программы
+- Разные программы
 
 </v-clicks>
 
 <v-click at="4">
 
 - Ricing
-- и другие полезные штуки как сделать кодинг комфортным
+- и другие полезные штуки, как сделать кодинг вайбовым
 
 </v-click>
 
@@ -149,7 +149,7 @@ img {
 layout: two-cols
 ---
 
-# Vibecoding
+# Что такое Vibecoding?
 <br />
 <br />
 
@@ -160,7 +160,7 @@ layout: two-cols
 
 ::right::
 
-<video src="./public/vibox.mp4" autoplay loop muted />
+<video src="/vibox.mp4" autoplay loop muted />
 
 <style>
    .info {
@@ -205,7 +205,7 @@ image: /more-monitors.jpg
 
 ---
 layout: image
-image: ./public/trent-van-gaming-setup-vanlife-2470197836.jpg
+image: /trent-van-gaming-setup-vanlife-2470197836.jpg
 ---
 
 ---
@@ -293,89 +293,16 @@ image: /matrix.gif
 </h1>
 
 ---
-src: ./pages/tilling.md
+src: ./pages/software/tilling.md
 ---
 
 ---
-src: ./pages/virtual-pointers.md
+src: ./pages/software/virtual-pointers.md
 ---
 
 ---
-
-# TUI приложения
-
-<br>
-
-<div class="info">
-
-ℹ️ 
-<br> **TUI** - text user interface, terminal user interface
-
-<br> GUI в терминальчике короче
-</div>
-
-<style>
-   .info {
-       padding-left: 1rem;
-       border-left: 3px solid var(--cyan);
-   }
-</style>
-
+src: ./pages/software/tui.md
 ---
-class: grid grid-cols-3 gap-5
----
-
-<h1 class="grid-col-span-3">TUI приложения (их миллионы)</h1>
-<div>
-    <img src="/tui/queue.BYnoUff__uRxjq.webp"/>
-    <label>Music player (rmpc)</label>
-</div>
-
-<div>
-    <img src="/tui/11fc1cbd-b255-4d03-871c-b3352e992593.gif"/>
-    <label>Telegramm client (tgt)</label>
-</div>
-
-<div>
-    <img class="h-38 mx-a" src="/tui/sunflower-term.png"/>
-    <label>Image/video viewer (timg)</label>
-</div>
-
-
-<style>
-img {
-    margin-bottom: 12px;
-}
-
-h1 ~ div {
-    text-align: center;
-}
-
-label {
-    text-align: middle;
-    font-size: 12px;
-}
-</style>
-
----
-layout: image-right
-image: /matrix.gif
----
-
-# TUI приложения
-<br>
-
-#### Особи:
-
-<v-click>
-    <div class="mt-10 w-60 fit-content text-center">
-        <img class="h-60 mb-8" src="/tui/qr-code.png" />
-        <label > git tui-awesome </label>
-    </div>
-</v-click>
-
-<style>
-</style>
 
 ---
 layout: image-left
@@ -385,7 +312,6 @@ image: /Themes/preview.webp
 # Цветовые схемы
 <br>
 
-#### Их миллион:
 - **catppuccin** (onelove)
 - tokyonight
 - gruvbox
@@ -404,8 +330,9 @@ layout: two-cols
 <v-clicks>
 
 - Конфигурируем Тайловый WM
-- Разные TUI программки
+- Устанавливаем всякие TUI программки
 - Накидываем полезных виджетов
+- Настраиваем IDE под себя
 - Льем одну тему во все установленное
 - тудым сюдым
 
@@ -431,52 +358,8 @@ layout: two-cols
 </style>
 
 ---
-
-<div class="grid gap-3">
-<h1 class="grid-col-span-2">Ricing</h1>
-
-<div class="info mt-20">
-
-ℹ️ 
-<br> **Ricing** - готовка чего либо
-<br> *Сленговое* - глубокая кастомизация
-</div>
-<video  class="w-120 mt-8 b-rd-8 mx-a" loop autoplay src="/ricing/m2-res_480p.mp4" />
-
-</div>
-
-<style>
-   .grid {
-       grid-template-columns: 0.6fr 1fr;
-   }
-
-   .info {
-       height: 100px;
-       padding-left: 1rem;
-       border-left: 3px solid var(--cyan);
-   }
-</style>
-
+src: ./pages/software/ricing.md
 ---
-class: grid grid-cols-2 grid-rows gap-12
----
-
-<h1 class="grid-col-span-2">Ricing (примеры)</h1>
-
-<img  src="/ricing/7fcf6711c8ae6192c01ff0d60bf67216.png"/>
-<img src="/ricing/16b3dd673f581f021ce2ccbd705d09cf.png"/>
-<img src="/ricing/246a81b266d0b9ba7f83349758ab89b8.png"/>
-<img src="/ricing/03a7295fa0e9e58a1a5bbd8a699ef8b9.png"/>
-
-<style>
-img {
-    margin: auto;
-    height: 100%;
-}
-.grid {
-    grid-template-rows: 20px  180px 180px;
-}
-</style>
 
 ---
 layout: fact
@@ -485,9 +368,12 @@ layout: fact
 # А дальше что?
 
 ---
+src: ./pages/software/cool-programs.md
+---
+
 
 # Становимся кулхакерами
-Натягивай худи и иди заменять стандартные приложения на ide
+Берем пиво, натягиваем худи и идем при помощи программирования решать стандартные задачи
 
 ### Word
 `latex/typst` с `pandoc` конвертером
@@ -501,11 +387,70 @@ layout: fact
 ---
 layout: end
 ---
-## Мой вам совет: *ищите новые инструменты*.
-## И тогда вы точно прочувствуете *тру vibecoding*
+<div>
+
+## Короче, выбирай свою сторону!
+<div class="images">
+    <img class="nerd" src="/nerd.jpg" />
+    <img class="hacker" src="/hackerman.png" />
+</div>
+
+<v-click>
+
+### и куй свое вайбовое окружение
+</v-click>
+    
+</div>
+
+<style>
+.images {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    display: flex;
+    gap: 2em;
+
+img {
+    width: 250px;
+    border-radius: 12px;
+}
+}
+</style>
+
 
 ---
 layout: end
 ---
 
+<div class="grid">
+<div>
+
 # Спасибо за внимание
+#### вещал Дима
+#### да прибудет с вами **ПИИИВО**
+</div>
+
+<div class="flex self-end">
+        <img src="/presa.png" />
+        <label class="floating">ПРЕЗА</label>
+</div>
+
+</div>
+
+<style>
+* {
+    text-align: left;
+}
+.floating {
+    top: 250px;
+    right: 195px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.grid {
+    display: grid;
+    gap: 20px;
+    place-items: center;
+    grid-template-columns: repeat(2,  1fr);
+}
+</style>
+

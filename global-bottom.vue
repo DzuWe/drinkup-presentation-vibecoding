@@ -17,7 +17,7 @@ footer {
   background: #11111BAA;
   border-radius: 12px;
   padding: 0.1em 0.5em;
-  color: #585b70;
+  color: #CACACA;
   z-index: 200;
   bottom: 1em;
   right: 1em;
@@ -25,7 +25,6 @@ footer {
 
 footer.mini {
   font-size: 12px;
-  color: #45475a;
   bottom: 1em;
   right: 1em;
 }

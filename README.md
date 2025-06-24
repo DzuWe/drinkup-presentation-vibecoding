@@ -42,17 +42,41 @@
 
 ### Virtual pointers
 
-### Top
+#### Top
 [warpd](https://github.com/rvaiya/warpd)
 
-### linux
+#### linux
 [rat](https://github.com/david-haerer/rat)
 
-### macos
+#### macos
 [keytty](https://keytty.com/)
 [mousio](https://wangchujiang.com/mousio/)
 
 ### TUI
 [tui awesome](https://github.com/rothgar/awesome-tuis)
+[brow.sh - терминальный браузер](brow.sh)
+
+### Темы
+[Моя любимая - catppuccin](https://catppuccin.com/)
+
+### Ricing
+[r/unixporn](https://www.reddit.com/r/unixporn/wiki/index/)
 
 ### Вайбовые приложения
+
+#### Презентации
+[slidev](https://sli.dev/)
+[reveal.js](https://revealjs.com/)
+[presenterm](https://github.com/mfontanini/presenterm)
+
+#### Замена WORD
+[Typst](https://typst.app/)
+[LateX](https://www.latex-project.org/about/)
+[Конвертер pandoc](https://pandoc.org/)
+
+#### Видео
+[remotion 💩](https://www.remotion.dev/)
+[revideo](https://re.video/)
+
+#### Музыка
+[strudel.cc](https://strudel.cc/)
