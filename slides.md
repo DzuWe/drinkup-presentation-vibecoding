@@ -46,14 +46,14 @@ image: /photo_2025-02-09_13-08-50.jpg
 
 <br>
 
-- 👤 **Зовут Дзюба Дима**
-- 🟥 **Работаю в MWS**
-- 🌄 **Пилю фронтенд на vue**
-- 🧑‍💻 **nvim onelove**
+- 👤 **Зовут Дзюба Дима** 👤
+- 🟥 **Работаю в MWS** 🟥
+- 🌄 **Пилю фронтенд на Vue** 🌄
+- 🧑‍💻 **Nvim onelove** 🧑‍💻
 
 <v-click>
 
-- ⚽ **Это не мой родственник распространяет интимные видео**
+- ⚽ **Это не мой родственник распространяет интимные видео** ⚽
 
 </v-click>
 
@@ -73,21 +73,20 @@ layout: two-cols
 - О том как ИИ заменит разработчиков?
 
 </v-clicks>
+
 ::right::
-<div class="clown" :style="{
-    '--clown-height': [80, 160, 230, 400][$clicks] + 'px'
-    }"></div>
+
+<div class="grid h-100% place-items-center">
+   <img v-if="$clicks === 0" style="scale: 0.5" src="/clown1.webp"/>
+   <img v-if="$clicks === 1" style="scale: 1" src="/clown2.webp"/>
+   <img v-if="$clicks === 2" style="scale: 1.5" src="/clown3.webp"/>
+   <img v-if="$clicks === 3" style="scale: 2" src="/clown4.webp"/>
+</div>
 
 <style>
-.clown {
-    height: var(--clown-height);
-    width: 100px;
-    border-top: black 2px solid;
-    border-right: black 2px solid;
-    margin: auto;
-    background: url('/public/Clown.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+img {
+    border-radius: 12px;
+    width: 200px;
 }
 </style>
 
@@ -110,15 +109,15 @@ layout: two-cols
 
 # А говорить буду про:
 
+- Недооцененные штуки
 <v-clicks>
 
-- Недооцененные штуки
 - Гиковые гаджеты
 - Полезные программы
 
 </v-clicks>
 
-<v-click at="5">
+<v-click at="4">
 
 - Ricing
 - и другие полезные штуки как сделать кодинг комфортным
@@ -127,11 +126,11 @@ layout: two-cols
 
 ::right::
 
-<img src="/keyboard.jpg"  v-click="[1, 2]" />
-<img src="/geek.jpg"  v-click="[2, 3]" />
-<img src="/vim.jpg"  v-click="[3, 4]" />
-<h3 class="joke" v-click="[4, 5]"><strong>ШУТКА</strong>,<br> сегодня без вима</h3>
-<img src="/ricing.png"  v-click="5" />
+<img src="/keyboard.jpg"  v-if="$clicks === 0" />
+<img src="/geek.jpg"  v-click="[1, 2]" />
+<img src="/vim.jpg"  v-click="[2, 3]" />
+<h3 class="joke" v-click="[3, 4]"><strong>ШУТКА</strong>,<br> сегодня без вима</h3>
+<img src="/ricing.png"  v-click="4" />
 
 <style>
 img, .joke {
@@ -161,12 +160,17 @@ layout: two-cols
 
 ::right::
 
-<img class="h-70 m-auto mt-20" src="/vibecodebook.png"/>
+<video src="./public/vibox.mp4" autoplay loop muted />
 
 <style>
    .info {
        padding-left: 1rem;
        border-left: 3px solid var(--cyan);
+   }
+   video {
+       border-radius: 10px;
+       margin: auto;
+       width: 260px;
    }
 </style>
 
@@ -186,7 +190,7 @@ layout: fact
 layout: fact
 ---
 
-# **Вайбовый кодинг** это:
+# **Вайбовый кодинг**
 
 <style>
 h1 {
@@ -197,6 +201,11 @@ h1 {
 ---
 layout: image
 image: /more-monitors.jpg
+---
+
+---
+layout: image
+image: ./public/trent-van-gaming-setup-vanlife-2470197836.jpg
 ---
 
 ---
@@ -245,55 +254,32 @@ layout: fact
 # 🍺 = 500р
 
 ---
-src: ./pages/mouses.md
+src: ./pages/hardware/mouses.md
 ---
 
 ---
-src: ./pages/touchpads.md
+src: ./pages/hardware/touchpads.md
 ---
 
 ---
-src: ./pages/trackball.md
+src: ./pages/hardware/trackball.md
 ---
 
 ---
-src: ./pages/keyboards.md
+src: ./pages/hardware/keyboards.md
 ---
 
 ---
-layout: image-left
-image: /onkron_G280.png
+src: ./pages/hardware/bracket.md
 ---
 
-# Кронштейны
-<br>
-
-##### Плюхи
-
-- Есть кронштейны и для ноутов
-- Позволяют располагать мониторы друг над другом. Работай лежа если хочешь!
-- Добавляют места на столе под ПИВО
-
 ---
-layout: image-left
-image: /hardware.jpg
+src: ./pages/hardware/custom-things.md
 ---
 
-# Что еще?
-<br>
-
-- Беспроводные зарядки, подставки
-
-<v-clicks>
-
-- Компактные кофемашины за стол
-- Подъемные столы
-- Удобные стулья
-- Грамотное освещение
-- Распбери с любым запрогромированным тобой капризом
-- Да что угодно, чтоб тебе было вайбово
-
-</v-clicks>
+---
+src: ./pages/hardware/other-harware.md
+---
 
 ---
 layout: image
@@ -311,76 +297,8 @@ src: ./pages/tilling.md
 ---
 
 ---
-class: grid grid-cols-2 gap-5
+src: ./pages/virtual-pointers.md
 ---
-
-<h1 class="grid-col-span-2">Виртуальные<br>указатели</h1>
-
-<div>
-    <img src="/ModalDrivenMouse/hints.gif"/>
-    <label>Hint Mode (warpd)</label>
-</div>
-
-<div>
-    <img src="/ModalDrivenMouse/warp.gif"/>
-    <label>Grid Mode (warpd)</label>
-</div>
-
-
-<style>
-img {
-    margin-bottom: 12px;
-}
-
-h1 ~ div {
-    text-align: center;
-}
-
-label {
-    text-align: middle;
-    font-size: 12px;
-}
-</style>
-
----
-layout: image-right
-backgroundSize: 300px
-image: /ModalDrivenMouse/110483.png
----
-
-# Виртуальные указатели
-<br>
-
-#### Плюхи:
-<br>
-
-- Для ленивых. Уменьшает дистанцию движения рук)
-- Клавиатура быстрее мыши. 
-- geek vibe
-
----
-layout: image-right
-backgroundSize: 300px
-image: /ModalDrivenMouse/110483.png
----
-
-# Виртуальные указатели
-<br>
-
-#### Особи:
-<v-clicks>
-
-- **Линух**
-  - warpd
-  - rat
-- **Макось**
-  - warpd
-  - keytty
-  - mousio
-- **Винда**
-  - увы (я не нашел)
-
-</v-clicks>
 
 ---
 
