@@ -83,32 +83,6 @@ video {
 
 ---
 
-<h1 class="floating">Клепаем видео</h1>
-
-<v-click>
-<div class="floating top-30">
-<h3> Особи </h3>
-
-- 💩 remotion (тут реактом попахивает)
-- re.video (тут вроде как можно подрубить  Vue, с плясками)
-- ffmpeg (Женя Кучерявый говорил что может и на нем фигачить видосы)
-</div>
-</v-click>
-
-<video autoplay loop src="/coding/Remotion.webm" />
-
-<style>
-video {
-    position: absolute;
-    width: 400px;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-}
-</style>
-
----
-
 <h1 class="floating">Пишем музыку (strudel.cc)</h1>
 
 <video autoplay loop src="/coding/strudel.mov" />
