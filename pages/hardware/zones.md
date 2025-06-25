@@ -19,35 +19,27 @@ image: /my-deck.jpg
 <h2 class="floating">Рабочие зоны</h2>
 
 
-<v-click>
-<div class="zone bottom-0 left-40 w-70 h-55">
+<div v-click class="zone bottom-0 left-40 w-70 h-55">
         <span>Основная</span>
 </div>
-</v-click>
 
-<v-click>
-<div class="zone green bottom-60 left-0 w-50 h-30">
+<div v-click class="zone green bottom-60 left-0 w-50 h-30">
         <span>Вторичная</span>
 </div>
-</v-click>
 
-<v-click>
-<div class="zone red bottom-0 left-0 w-40 h-20">
+<div v-click class="zone red bottom-0 left-0 w-40 h-20">
         <span>Хранение</span>
 </div>
-</v-click>
 
-<v-click>
-<div class="zone cyan top-65 left-50 w-120 h-20">
-        <span>Личная</span>
-</div>
-</v-click>
-
-<v-click>
-<div class="zone yellow top-20 right-0 w-70 h-100">
+<div v-click class="zone yellow top-20 right-0 w-70 h-100">
         <span>Референсная</span>
 </div>
-</v-click>
+
+<div v-click class="zone cyan top-65 left-50 w-120 h-20">
+        <span>Личная</span>
+</div>
+
+
 
 <style>
 .zone {

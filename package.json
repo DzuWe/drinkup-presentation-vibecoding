@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
+    "serve": "pnpm build && http-server ./dist/ --cors --port=8080",
     "dev": "slidev --open",
     "export": "slidev export"
   },
@@ -14,5 +15,8 @@
     "slidev-theme-catppuccin-latte": "^0.1.0",
     "slidev-theme-catppuccin-mocha": "^0.1.0",
     "vue": "^3.5.16"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }

@@ -42,7 +42,7 @@ video {
 <h1 class="floating">Замена WORD</h1>
 
 <v-click>
-    <h3 class="floating top-30">LateX/Typst + <strong>pandoc</strong> = docx</h3>
+    <h3 class="floating right-20">LateX/Typst + <strong>pandoc</strong> = docx</h3>
 </v-click>
 
 <video autoplay loop src="/coding/typst.webm" />
@@ -63,9 +63,9 @@ video {
 <div class="floating top-30 w-100">
 <h3> Особи </h3>
 
-- <span class="text-orange">💩remotion💩</span> (тут реактом попахивает)
-- `re.video` (тут вроде как можно подрубить  Vue, с плясками)
-- `ffmpeg` (Женя Кучерявый говорил что может и на нем фигачить видосы)
+- <span class="text-orange">💩remotion💩</span> <br>(пахнет реактом)
+- <span class="text-green">re.video</span> <br>(можно подрубить Vue, с плясками)
+- <span class="text-green">ffmpeg</span> <br>(Женя Кучерявый говорил, что может и на нем фигачить видосы)
 </div>
 </v-click>
 

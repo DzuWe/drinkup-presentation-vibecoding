@@ -4,17 +4,22 @@ layout: quote
 
 <div class="text-center">
 
-## Встает вопрос
-# Бежать все настраивать и закупать?
+### Итого встает вопрос:
+# Неужели надо бежать все настраивать и закупать?
 </div>
 
+<style>
+h1 {
+    margin-top: 24px;
+}
+</style>
+
 ---
-layout: quote
+layout: fact
 ---
 
 <div class="text-center">
 
-## Нет!
 # **Начни с малого**
 </div>
 
