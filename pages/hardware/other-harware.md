@@ -60,3 +60,28 @@
     }
 }
 </style>
+
+---
+
+# Итого по деньгам
+Подъемный стол + Стул + 2 кронштейна + Клавиатура + Мышь выходит
+
+<div class="mx-auto w-200">
+<span v-for="n of 107" :style="{'--delay': `${n * 10}ms`}" class="appearbear">🍺</span>
+<span  :style="{'--delay': `${107*10}ms`}" class="appearbear">&nbsp;~ 107</span>
+
+</div>
+
+<style>
+.appearbear {
+    font-size: 36px;
+    opacity: 0;
+    animation: 1s appear linear forwards;
+    animation-delay: var(--delay, 0);
+}
+@keyframes appear {
+ to {
+    opacity: 1
+}
+}
+</style>

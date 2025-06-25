@@ -29,14 +29,14 @@
 
 <style>
 .content {
-    padding-left: calc(50% + 2em);
+    padding-right: calc(50% + 2em);
 }
 .image {
     width: 50%;
     position: absolute;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     &.first {
         background: url('/touchpad/pc-touchpad.jpg');
         background-size: cover;

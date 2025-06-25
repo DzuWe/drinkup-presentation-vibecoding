@@ -33,14 +33,14 @@ Raspberry - 🍺x20
 
 <style>
 .content {
-    padding-left: calc(50% + 2em);
+    padding-right: calc(50% + 2em);
 }
 .image {
     width: 50%;
     position: absolute;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
 
     &.first {
         background: url('/custom/8accbf895f7290582be7ab2101ffa117-2535513382.jpg');

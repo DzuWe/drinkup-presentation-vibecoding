@@ -104,46 +104,8 @@ img {border-radius: 12px}
 </style>
 
 ---
-layout: two-cols
+src: ./pages/about.md
 ---
-
-# А говорить буду про:
-
-- Недооцененные штуки
-<v-clicks>
-
-- Гиковые гаджеты
-- Разные программы
-
-</v-clicks>
-
-<v-click at="4">
-
-- Ricing
-- и другие полезные штуки, как сделать кодинг вайбовым
-
-</v-click>
-
-::right::
-
-<img src="/keyboard.jpg"  v-if="$clicks === 0" />
-<img src="/geek.jpg"  v-click="[1, 2]" />
-<img src="/vim.jpg"  v-click="[2, 3]" />
-<h3 class="joke" v-click="[3, 4]"><strong>ШУТКА</strong>,<br> сегодня без вима</h3>
-<img src="/ricing.png"  v-click="4" />
-
-<style>
-img, .joke {
-    max-width: 300px;
-    position: absolute;
-    top: 50%;
-    right: 3em;
-    transform: translateY(-50%);
-}
-img {
-    border-radius: 1rem;
-}
-</style>
 
 ---
 layout: two-cols
@@ -154,8 +116,7 @@ layout: two-cols
 <br />
 
 <div class="info">
-ℹ️ (в кратце)
-<br> программирование значительного кода продукта используя только естественный язык и llm агенты
+Программирование значительного кода продукта используя только естественный язык и&nbsp;llm агенты
 </div>
 
 ::right::
@@ -208,6 +169,8 @@ layout: image
 image: /trent-van-gaming-setup-vanlife-2470197836.jpg
 ---
 
+<div class="floating bottom-10 right-4 flex flex-items-center flex-justify-center"><img width="40" src="/youtube-logo-png-46031.png" /> @TrentTheTraveler</div>
+
 ---
 layout: image
 image: /my-deck.jpg
@@ -251,7 +214,16 @@ layout: fact
 ---
 
 ## Про цены:
+<v-switch>
+<template #1>
+        
+# 🍺 = 420р (Boosty)
+</template>
+<template #2>
+        
 # 🍺 = 500р
+</template>
+</v-switch>
 
 ---
 src: ./pages/hardware/mouses.md
@@ -282,6 +254,10 @@ src: ./pages/hardware/other-harware.md
 ---
 
 ---
+src: ./pages/hardware/zones.md
+---
+
+---
 layout: image
 class: grid place-items-center bg-black
 backgroundSize: 40em
@@ -305,19 +281,9 @@ src: ./pages/software/tui.md
 ---
 
 ---
-layout: image-left
-image: /Themes/preview.webp
+src: ./pages/software/colorthemes.md
 ---
 
-# Цветовые схемы
-<br>
-
-- **catppuccin** (onelove)
-- tokyonight
-- gruvbox
-- onedark
-- dracula
-- и тд
 
 ---
 layout: two-cols
@@ -371,51 +337,9 @@ layout: fact
 src: ./pages/software/cool-programs.md
 ---
 
-
-# Становимся кулхакерами
-Берем пиво, натягиваем худи и идем при помощи программирования решать стандартные задачи
-
-### Word
-`latex/typst` с `pandoc` конвертером
-
-### Powerpoint
-`slidev`, `reveal.js`, `presenterm`, `slides`
-
-### Video Editors
-`remotion`, `revideo`
-
 ---
-layout: end
+src: ./pages/ending.md
 ---
-<div>
-
-## Короче, выбирай свою сторону!
-<div class="images">
-    <img class="nerd" src="/nerd.jpg" />
-    <img class="hacker" src="/hackerman.png" />
-</div>
-
-<v-click>
-
-### и куй свое вайбовое окружение
-</v-click>
-    
-</div>
-
-<style>
-.images {
-    margin-top: 36px;
-    margin-bottom: 36px;
-    display: flex;
-    gap: 2em;
-
-img {
-    width: 250px;
-    border-radius: 12px;
-}
-}
-</style>
-
 
 ---
 layout: end

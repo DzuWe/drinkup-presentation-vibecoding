@@ -3,12 +3,12 @@
 <video autoplay class="mx-a" src="/outfoxxed.mp4" loop/>
 <p class="absolute bottom-2 font-size-3 text-gray-500 text-center">(hyprland)</p>
 
-<div v-if="$clicks === 0" class="floating feature top-30">
+<div v-if="$clicks === 0" class="floating  feature top-30">
 Главная фича: <br>
 <strong>Эффективное управление рабочим пространством</strong>
 </div>
 
-<div v-click class="floating top-30 grid" > 
+<div v-click class="floating glassy top-30 grid" > 
 <h3>Особи:</h3>
 
 <div>
@@ -22,8 +22,8 @@
 <div>
 <strong>Макось</strong>
 
-- Aerospace (юзаю сам)
-- Ametist (юзал до aerospace)
+- Aerospace 🍺 
+- Ametist 
 - Yabai
 </div>
 
@@ -40,7 +40,7 @@
 <style>
 .grid {
     padding: 12px;
-    grid-template-columns: 150px 300px 200px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px 2em;
     h3 {
         grid-column: 1 / span 3;

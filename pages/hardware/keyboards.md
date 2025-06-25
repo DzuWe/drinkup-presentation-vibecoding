@@ -34,14 +34,14 @@
 
 <style>
 .content {
-    padding-left: calc(50% + 2em);
+    padding-right: calc(50% + 2em);
 }
 .image {
     width: 50%;
     position: absolute;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     &.first {
         background: url('/keyboards/IBM_model_m_rotate.jpg');
         background-size: cover;
@@ -216,7 +216,7 @@
 
 <style>
 .content {
-    padding-left: calc(50% + 2em);
+    padding-right: calc(50% + 2em);
 }
 .shortcut {
     padding: 12px;
@@ -232,7 +232,7 @@
     position: absolute;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
 
 
     &.first {
@@ -255,6 +255,13 @@
     }
 }
 </style>
+
+---
+layout: image
+image: /01-keymap-default-screen-b38d9cf94dbb1aeafcf0ab7b21c37bc5.png
+---
+
+<div class="floating bottom-10 right-2 color-purple">Конфигурирования через VIA</div>
 
 ---
 layout: two-cols
@@ -300,6 +307,7 @@ layout: two-cols
 <div class="mt-20">
 <v-click>
 
+- **Конфигурация подсветки**
 - **Настраиваемые раскладки**
 - **Макросы**
 - **Слои** 
@@ -309,7 +317,7 @@ layout: two-cols
 <v-click>
 <br>
 
-> и многое другое
+> и многое другое вшито в клавиатуру
 
 </v-click>
 
@@ -329,3 +337,4 @@ blockquote {
     font-size: 20px;
 }
 </style>
+
