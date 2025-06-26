@@ -211,20 +211,32 @@ image: /iron_texture1044-669289013.jpg
 
 ---
 layout: fact
+clicks: 3
 ---
 
 ## Про цены:
-<v-switch>
-<template #1>
+<template v-if="[1,2].includes($clicks)">
         
-# 🍺 = 420р (Boosty)
+# 🍺 = <span :class="{blurred: $clicks !== 2}">440р</span>
+### (DrinkUp boosty)
 </template>
-<template #2>
+
+<template v-if="$clicks === 3">
         
 # 🍺 = 500р
 </template>
-</v-switch>
 
+<style>
+span {
+    filter: blur(0);
+}
+
+.blurred {
+   filter: blur(30px);
+   overflow: hidden;
+}
+
+</style>
 ---
 src: ./pages/hardware/mouses.md
 ---
