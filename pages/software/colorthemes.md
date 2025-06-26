@@ -15,7 +15,7 @@ image: /Themes/preview.webp
 
 ---
 layout: image
-image: ../../public/catppuccin-ports.jpg
+image: /catppuccin-ports.jpg
 backgroundSize: 120%;
 ---
 

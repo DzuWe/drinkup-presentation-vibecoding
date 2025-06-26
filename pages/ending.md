@@ -150,4 +150,6 @@ image: /ending/old-man-computer.gif
 layout: fact
 ---
 
-# <span class="text-green">Меняй</span> **Кастомизируй** <span class="text-red">Эксперементируй</span>
+# <span class="text-green">Вайбуй</span> **Кастомизируй** <span class="text-red">Эксперементируй</span>
+
+
